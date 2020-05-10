@@ -84,6 +84,7 @@
 
     </dependencies>
 
+
     <build>
         <plugins>
             <plugin>
@@ -95,7 +96,7 @@
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>0.4.13</version>
                 <configuration>
-                    <imageName>springboot-demo:0.0.1</imageName>
+                    <imageName>${docker.image.prefix}/${project.artifactId}</imageName>
                     <dockerDirectory>${project.basedir}/src/main/docker</dockerDirectory>
                     <resources>
                         <resource>

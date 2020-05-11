@@ -11,7 +11,7 @@
 
     <groupId>com.zjc</groupId>
     <artifactId>springboot-demo</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <name>springboot-demo</name>
     <description>springboot学习</description>
 

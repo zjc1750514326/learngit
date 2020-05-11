@@ -107,7 +107,7 @@
                 </executions>
                 <configuration>
                     <!-- 上下文路径配置，此处设置为项目根路径 用来读取Dockerfile-->
-                    <contextDirectory>${project.basedir}/src/main/docker</contextDirectory>
+                    <contextDirectory>${project.basedir}</contextDirectory>
                     <!--使用Maven的setting.xml来配置账号密码-->
                     <useMavenSettingsForAuth>true</useMavenSettingsForAuth>
                     <!--上传路径/镜像构建名： Harbor地址/Harbor项目名/springboot项目名-->

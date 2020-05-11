@@ -110,7 +110,7 @@
                 </executions>
                 <configuration>
                     <imageName>${docker.registry}/${docker.image.prefix}/${project.artifactId}:${project.version}</imageName>
-                    <dockerHost>http://192.168.2.240:2375</dockerHost>
+                    <dockerHost>http://106.52.221.48:8888</dockerHost>
                     <baseImage>java:8</baseImage>
                     <entryPoint>["java", "-jar","/${project.build.finalName}.jar"]
                     </entryPoint>

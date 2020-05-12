@@ -109,9 +109,9 @@
                     <forceTags>true</forceTags>
                     <!-- 重点推送到私有镜像仓库 -->
                     <imageName>${docker.registry}/${docker.image.prefix}/${project.artifactId}</imageName>
-                    <imageTags>
+                   <!-- <imageTags>
                         <imageTag>latest</imageTag>
-                    </imageTags>
+                    </imageTags>-->
                     <resources>
                         <resource>
                             <targetPath>/</targetPath>

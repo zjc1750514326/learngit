@@ -20,7 +20,7 @@
         <!--项目名,需要和Harbor中的项目名称保持一致 -->
         <docker.image.prefix>test</docker.image.prefix>
         <!-- docker私服地址,Harbor配置完默认地址就是服务器IP地址,默认不带端口号 -->
-        <docker.registry>106.52.221.48</docker.registry>
+        <docker.registry>106.52.221.48:8888</docker.registry>
     </properties>
 
     <dependencies>

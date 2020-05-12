@@ -98,14 +98,15 @@
             <plugin>
                 <groupId>com.spotify</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
-                <version>1.0.0</version>
+                <version>1.2.0</version>
                 <configuration>
                     <dockerHost>http://106.52.221.48:2375</dockerHost>
                     <serverId>${docker.registry}</serverId>
                     <registryUrl>${docker.registry}/${docker.image.prefix}/</registryUrl>
                     <dockerDirectory>${project.basedir}/src/main/docker</dockerDirectory>
                     <forceTags>true</forceTags>
-                    <imageName>${project.artifactId}</imageName>
+                    <!-- 推送到私有镜像仓库 -->
+                    <imageName>${docker.registry}/${docker.image.prefix}/${project.artifactId}</imageName>
                     <imageTags>
                         <imageTag>latest</imageTag>
                     </imageTags>
